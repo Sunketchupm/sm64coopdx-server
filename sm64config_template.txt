@@ -1,17 +1,40 @@
+coop_player_name SERVER
+coopnet_password PASSWORD
+
+enable-mod: MODNAME.lua
+enable-mod: MODNAME2.lua
+
+coop_player_interaction 0
+coop_player_knockback_strength 25
+coop_stay_in_level_after_star 1
+coop_nametags true
+coop_mod_dev_mode true
+coop_bouncy_bounds 0
+skip_intro true
+pause_anywhere true
+player_pvp_mode 0
+amount_of_players 16
+bubble_death true
+
+moderator: 1
+moderator: 2
+ban: 1
+ban: 2
+
 fullscreen false
 window_x 2048
 window_y 115
 window_w 1600
 window_h 877
-vsync true
+vsync false
 msaa 0
 texture_filtering 2
 show_fps false
 show_ping false
 framerate_mode 2
 frame_limit 30
-interpolation_mode 1
-coop_draw_distance 4
+interpolation_mode 0
+coop_draw_distance 0
 master_volume 80
 music_volume 127
 sfx_volume 127
@@ -83,7 +106,6 @@ lua_profiler false
 debug_print false
 debug_info false
 debug_error false
-coop_player_name
 coop_player_model 0
 coop_player_palette_pants 00 00 ff
 coop_player_palette_shirt ff 00 00
@@ -93,33 +115,21 @@ coop_player_palette_hair 73 06 00
 coop_player_palette_skin fe c1 79
 coop_player_palette_cap ff 00 00
 coop_player_palette_emblem ff 00 00
-amount_of_players 16
-bubble_death true
 coop_host_port 7777
 coop_host_save_slot 1
 coop_join_ip
 coop_join_port 7777
 coop_network_system 0
-coop_player_interaction 0
-coop_player_knockback_strength 25
-coop_stay_in_level_after_star 1
-coop_nametags true
-coop_mod_dev_mode true
-coop_bouncy_bounds 0
-skip_intro true
-pause_anywhere true
 coop_menu_staff_roll false
 coop_menu_level 0
 coop_menu_sound 0
 coop_menu_random false
-player_pvp_mode 0
 disable_popups true
 language
 force_4by3 false
 dynos_local_player_model_only false
 coopnet_ip net.coop64.us
 coopnet_port 34197
-coopnet_password
 coopnet_dest 0
 djui_theme 1
 djui_theme_center true

@@ -20,6 +20,8 @@ services:
       - no-new-privileges:true
     tty: true
 
+    container_name: "sm64coopdx-server"
+
     image: ghcr.io/sunketchupm/sm64coopdx-server:latest
     volumes:
       - ./baserom.us.z64:/sm64/baserom.us.z64:ro

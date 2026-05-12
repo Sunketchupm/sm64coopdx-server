@@ -2,3 +2,4 @@
 config/*
 !config/sm64config.txt
 .venv
+logs.txt

@@ -1,3 +1,4 @@
 *.z64
 config/*
 !config/sm64config.txt
+.venv

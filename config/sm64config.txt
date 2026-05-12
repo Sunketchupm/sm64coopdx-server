@@ -18,32 +18,32 @@ sfx_volume 127
 env_volume 127
 fade_distant_sounds false
 mute_focus_loss false
-key_a 0026 1000 1103
-key_b 0033 1001 1101
-key_x 0017 1002 ffff
-key_y 0032 1003 ffff
-key_start 0039 1006 ffff
-key_l 002a 1009 1104
-key_r 0036 100a 101b
-key_z 0025 1007 101a
-key_cup 0148 ffff ffff
-key_cdown 0150 ffff ffff
-key_cleft 014b ffff ffff
-key_cright 014d ffff ffff
-key_stickup 0011 ffff ffff
-key_stickdown 001f ffff ffff
-key_stickleft 001e ffff ffff
-key_stickright 0020 ffff ffff
-key_chat 001c ffff ffff
-key_playerlist 000f 1004 ffff
-key_dup 0147 100b ffff
-key_ddown 014f 100c ffff
-key_dleft 0153 100d ffff
-key_dright 0151 100e ffff
-key_console 0029 003b ffff
-key_prev 0016 ffff ffff
-key_next 0018 ffff ffff
-key_disconnect ffff ffff ffff
+key_a 0026 1000 1103 
+key_b 0033 1001 1101 
+key_x 0017 1002 ffff 
+key_y 0032 1003 ffff 
+key_start 0039 1006 ffff 
+key_l 002a 1009 1104 
+key_r 0036 100a 101b 
+key_z 0025 1007 101a 
+key_cup 0148 ffff ffff 
+key_cdown 0150 ffff ffff 
+key_cleft 014b ffff ffff 
+key_cright 014d ffff ffff 
+key_stickup 0011 ffff ffff 
+key_stickdown 001f ffff ffff 
+key_stickleft 001e ffff ffff 
+key_stickright 0020 ffff ffff 
+key_chat 001c ffff ffff 
+key_playerlist 000f 1004 ffff 
+key_dup 0147 100b ffff 
+key_ddown 014f 100c ffff 
+key_dleft 0153 100d ffff 
+key_dright 0151 100e ffff 
+key_console 0029 003b ffff 
+key_prev 0016 ffff ffff 
+key_next 0018 ffff ffff 
+key_disconnect ffff ffff ffff 
 stick_deadzone 16
 rumble_strength 50
 gamepad_number 0
@@ -83,7 +83,7 @@ lua_profiler false
 debug_print false
 debug_info false
 debug_error false
-coop_player_name
+coop_player_name Player
 coop_player_model 0
 coop_player_palette_pants 00 00 ff
 coop_player_palette_shirt ff 00 00
@@ -97,9 +97,9 @@ amount_of_players 16
 bubble_death true
 coop_host_port 7777
 coop_host_save_slot 1
-coop_join_ip
+coop_join_ip 
 coop_join_port 7777
-coop_network_system 0
+coop_network_system 1
 coop_player_interaction 0
 coop_player_knockback_strength 25
 coop_stay_in_level_after_star 1
@@ -114,12 +114,12 @@ coop_menu_sound 0
 coop_menu_random false
 player_pvp_mode 0
 disable_popups true
-language
+language English
 force_4by3 false
 dynos_local_player_model_only false
 coopnet_ip net.coop64.us
 coopnet_port 34197
-coopnet_password
+coopnet_password 
 coopnet_dest 0
 djui_theme 1
 djui_theme_center true

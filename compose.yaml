@@ -1,12 +1,26 @@
 services:
   server:
     build: .
+
     develop:
       watch:
         - action: restart
           path: ./config/mods
-    image: ghcr.io/sunketchupm/sm64coopdx-server:latest
+
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1000m"
+        max-file: "10"
+
+    user: "1000:1000"
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
     tty: true
+
+    image: ghcr.io/sunketchupm/sm64coopdx-server:latest
     volumes:
       - ./baserom.us.z64:/sm64/baserom.us.z64:ro
       - ./config:/sm64/config
@@ -18,8 +32,3 @@ services:
       # Leave blank to make a public lobby, or set a password to make a private lobby
       "--coopnet", ""
     ]
-    user: "1000:1000"
-    cap_drop:
-      - ALL
-    security_opt:
-      - no-new-privileges:true

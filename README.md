@@ -13,6 +13,11 @@ To stop:
 ```
 docker compose down
 ```
+To enable server auto-restart (Linux):
+```
+python3 restart.py &
+```
+(The script itself is platform agnostic, but other platforms may require a different execution command)
 # Configuration
 To change server settings, you need to modify `sm64config.txt` (the one located in `config`) Parsing this can be hard, so what you can do instead is change `sm64config_template.txt`. This file has the server settings that matter at the top, as well as the moderator/ban list.<br>
 Once you make your changes, you can copy `sm64config_template.txt` into `config` and rename it to `sm64config.txt`.

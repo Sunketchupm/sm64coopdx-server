@@ -28,9 +28,9 @@ with open("logs.txt", "a") as file:
                 if match != None:
                     human_timestamp = match.group("human_time")
                     chat_message = match.group("chat")
-                    file.write(f"{human_timestamp} {chat_message}")
+                    file.write(f"{human_timestamp} {chat_message}\n")
                 else:
-                    file.write(line)
+                    file.write(line + "\n")
                 file.flush()
 
             if "Coopnet shutdown!" in line and "packet_chat.c" not in line:

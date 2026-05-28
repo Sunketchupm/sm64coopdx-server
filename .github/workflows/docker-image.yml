@@ -43,6 +43,13 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Check working directory
+      run: |
+            echo "Using environment variable: $GITHUB_WORKSPACE"
+            echo "Using GitHub context: ${{ github.workspace }}"
+            echo "Using standard shell command:"
+            pwd
+
     - name: Build
       uses: docker/build-push-action@v7
       with:

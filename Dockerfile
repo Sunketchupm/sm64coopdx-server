@@ -17,14 +17,15 @@ WORKDIR /sm64
 ENV PATH="/sm64/tools:${PATH}"
 
 COPY sm64coopdx .
-RUN make -j16 DISCORD_SDK=0 RENDER_API=DUMMY WINDOW_API=DUMMY
+RUN make -j16 DISCORD_SDK=0
 
 FROM debian:bookworm-slim AS release
 
 RUN apt-get update && \
     apt-get install -y \
         libsdl2-2.0-0 \
-        libcurl4
+        libcurl4 \
+        libgl1
 
 WORKDIR /sm64
 COPY --from=build /sm64/build/us_pc/sm64coopdx /sm64/sm64coopdx

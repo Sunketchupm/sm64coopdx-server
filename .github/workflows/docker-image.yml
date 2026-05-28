@@ -21,7 +21,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Clone coop
+      uses: actions/checkout@v4
+      with:
+        respoitory: 'coop-deluxe/sm64coopdx'
+        path: '.'
 
     - name: set lower case owner name
       run: echo "USER_NAME_LC=${USER_NAME,,}" >>${GITHUB_ENV}

@@ -47,7 +47,7 @@ jobs:
       uses: docker/build-push-action@v7
       with:
         push: true
-        context: ./
+        context: .
         file: ./Dockerfile
         tags: ghcr.io/${{ env.USER_NAME_LC }}/${{ env.IMAGE_NAME }}:latest
         no-cache: true

@@ -24,7 +24,7 @@ jobs:
     - name: Clone coop
       uses: actions/checkout@v4
       with:
-        respoitory: 'coop-deluxe/sm64coopdx'
+        repository: 'coop-deluxe/sm64coopdx'
         path: '.'
 
     - name: set lower case owner name

@@ -16,7 +16,7 @@ RUN apt-get update && \
 WORKDIR /sm64
 ENV PATH="/sm64/tools:${PATH}"
 
-RUN git clone https://github.com/coop-deluxe/sm64coopdx.git .
+COPY sm64coopdx .
 RUN make -j16 DISCORD_SDK=0 RENDER_API=DUMMY WINDOW_API=DUMMY
 
 FROM debian:bookworm-slim AS release

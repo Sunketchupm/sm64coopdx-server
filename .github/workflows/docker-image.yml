@@ -43,6 +43,9 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: List
+      run: ls
+
     - name: Build
       uses: docker/build-push-action@v7
       with:

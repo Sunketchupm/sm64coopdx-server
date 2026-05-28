@@ -21,6 +21,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
     - name: Clone coop
       uses: actions/checkout@v4
       with:
@@ -43,14 +46,11 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: List
-      run: ls
-
     - name: Build
       uses: docker/build-push-action@v7
       with:
         push: true
-        context: ./sm64coopdx-server
-        file: ./sm64coopdx-server/Dockerfile
+        context: ./
+        file: ./Dockerfile
         tags: ghcr.io/${{ env.USER_NAME_LC }}/${{ env.IMAGE_NAME }}:latest
         no-cache: true

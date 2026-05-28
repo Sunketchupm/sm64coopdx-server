@@ -25,7 +25,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: 'coop-deluxe/sm64coopdx'
-        path: '.'
+        path: 'sm64coopdx'
 
     - name: set lower case owner name
       run: echo "USER_NAME_LC=${USER_NAME,,}" >>${GITHUB_ENV}
